@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata dasar dokumen -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Menghubungkan ke Font Awesome untuk ikon sosial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Judul halaman -->
+    <title>Login Page</title>
+</head>
+<body>
+    <!-- Kontainer utama yang berisi semua elemen halaman -->
+    <div class="container" id="container">
+
+        <!-- Form pendaftaran akun -->
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+
+                <!-- Ikon sosial media untuk opsi pendaftaran -->
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <!-- Teks penjelasan -->
+                <span>or use your email for registration</span>
+
+                <!-- Input untuk nama, email, dan password -->
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+
+                <!-- Tombol untuk melakukan pendaftaran -->
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Form untuk login pengguna -->
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+
+                <!-- Ikon sosial media untuk opsi login -->
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <!-- Teks penjelasan -->
+                <span>or use your email password</span>
+
+                <!-- Input untuk email dan password -->
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+
+                <!-- Tautan untuk mengatur ulang kata sandi -->
+                <a href="#">Forget Your Password?</a>
+
+                <!-- Tombol untuk masuk ke akun -->
+                <button>Sign In</button>
+            </form>
+        </div>
+
+        <!-- Kontainer untuk bagian toggle antara Sign Up dan Sign In -->
+        <div class="toggle-container">
+            <div class="toggle">
+
+                <!-- Panel untuk mode Sign In -->
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+
+                <!-- Panel untuk mode Sign Up -->
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
